@@ -198,6 +198,20 @@ const ProductCard = () => {
                 <span className="stat-text">راضٍ 500+ عميل</span>
               </div>
             </div>
+            <div className="service-features">
+              <div className="feature-item">
+                <FiTruck className="feature-icon" />
+                <span className="feature-text">شحن سريع</span>
+              </div>
+              <div className="feature-item">
+                <FiShield className="feature-icon" />
+                <span className="feature-text">ضمان آمن</span>
+              </div>
+              <div className="feature-item">
+                <FiGift className="feature-icon" />
+                <span className="feature-text">هدية مجانية</span>
+              </div>
+            </div>
           </div>
           <div className="divider" aria-hidden="true" />
 
