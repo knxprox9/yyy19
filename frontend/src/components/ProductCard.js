@@ -747,9 +747,55 @@ const StyledWrapper = styled.div`
     line-height: 1.2;
   }
 
+  .card .content .service-info-bar .service-features {
+    display: flex;
+    justify-content: space-between;
+    gap: 6px;
+    margin-top: 8px;
+    padding-top: 8px;
+    border-top: 1px solid #e2e8f0;
+  }
+
+  .card .content .service-info-bar .feature-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2px;
+    flex: 1;
+    padding: 4px;
+    border-radius: 6px;
+    transition: all 0.2s ease;
+  }
+
+  .card .content .service-info-bar .feature-item:hover {
+    background: rgba(56, 161, 105, 0.1);
+    transform: translateY(-1px);
+  }
+
+  .card .content .service-info-bar .feature-icon {
+    width: 16px;
+    height: 16px;
+    color: #38a169;
+    flex-shrink: 0;
+  }
+
+  .card .content .service-info-bar .feature-text {
+    font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
+    font-weight: 600;
+    font-size: 0.6rem;
+    color: #4a5568;
+    line-height: 1.2;
+    text-align: center;
+  }
+
   .card .content .service-info-bar:hover {
     transform: translateY(-1px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  }
+
+  .card .content .empty-space {
+    height: 16px;
+    margin-bottom: 0.8rem;
   }
 
   .card:hover { transform: scale(1.03); }
