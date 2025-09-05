@@ -649,20 +649,105 @@ const StyledWrapper = styled.div`
 
 
 
-  .card .content .rating { 
-    color: #4a5568; 
-    font-size: 0.75rem; /* زيادة الحجم */
+  /* Service Info Bar Styles */
+  .card .content .service-info-bar {
+    background: linear-gradient(135deg, #f8fafc 0%, #e2e8f0 100%);
+    border: 1px solid #cbd5e0;
+    border-radius: 10px;
+    padding: 12px;
+    margin-bottom: 0.8rem;
     font-family: 'Tajawal', 'IBM Plex Sans Arabic', 'Cairo', sans-serif;
-    font-weight: 600; 
-    display: flex; 
-    align-items: center; 
-    gap: 0.8rem; /* زيادة المسافة بين النجوم والرقم */
-    direction: ltr; 
-    justify-content: flex-end; 
-    margin-bottom: 0.8rem; /* إضافة مسافة من الأسفل */
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   }
-  .card .content .rating svg { 
-    height: 16px; /* زيادة ارتفاع النجوم */
+
+  .card .content .service-info-bar .service-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 8px;
+  }
+
+  .card .content .service-info-bar .service-level,
+  .card .content .service-info-bar .service-duration {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .card .content .service-info-bar .level-icon,
+  .card .content .service-info-bar .duration-icon {
+    font-size: 14px;
+  }
+
+  .card .content .service-info-bar .level-text {
+    color: #2d3748;
+    font-weight: 700;
+    font-size: 0.75rem;
+  }
+
+  .card .content .service-info-bar .duration-text {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.7rem;
+  }
+
+  .card .content .service-info-bar .progress-container {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 8px;
+  }
+
+  .card .content .service-info-bar .progress-bar {
+    flex: 1;
+    height: 6px;
+    background: #e2e8f0;
+    border-radius: 3px;
+    overflow: hidden;
+  }
+
+  .card .content .service-info-bar .progress-fill {
+    height: 100%;
+    background: linear-gradient(90deg, #38a169 0%, #48bb78 50%, #38a169 100%);
+    border-radius: 3px;
+    transition: width 0.5s ease;
+  }
+
+  .card .content .service-info-bar .progress-percentage {
+    color: #38a169;
+    font-weight: 700;
+    font-size: 0.7rem;
+    min-width: 30px;
+    text-align: right;
+  }
+
+  .card .content .service-info-bar .service-stats {
+    display: flex;
+    justify-content: space-between;
+    gap: 8px;
+  }
+
+  .card .content .service-info-bar .stat-item {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+    flex: 1;
+  }
+
+  .card .content .service-info-bar .stat-icon {
+    font-size: 12px;
+  }
+
+  .card .content .service-info-bar .stat-text {
+    color: #4a5568;
+    font-weight: 600;
+    font-size: 0.65rem;
+    line-height: 1.2;
+  }
+
+  .card .content .service-info-bar:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   }
 
   .card:hover { transform: scale(1.03); }
