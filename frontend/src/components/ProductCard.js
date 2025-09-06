@@ -174,42 +174,42 @@ const ProductCard = () => {
           <div className="service-info-bar">
             <div className="service-header">
               <div className="service-level">
-                <span className="level-icon">🏆</span>
-                <span className="level-text">خدمة متقدمة</span>
+                <span className="level-icon">⭐</span>
+                <span className="level-text">خدمة مميزة</span>
               </div>
               <div className="service-duration">
-                <span className="duration-icon">⏱️</span>
-                <span className="duration-text">3-5 أيام</span>
+                <span className="duration-icon">🚀</span>
+                <span className="duration-text">تسليم سريع</span>
               </div>
             </div>
             <div className="progress-container">
               <div className="progress-bar">
-                <div className="progress-fill" style={{width: '85%'}}></div>
+                <div className="progress-fill" style={{width: '95%'}}></div>
               </div>
-              <span className="progress-percentage">85%</span>
+              <span className="progress-percentage">95%</span>
             </div>
             <div className="service-stats">
               <div className="stat-item">
-                <span className="stat-icon">✅</span>
-                <span className="stat-text">أكتمل 147+ مشروع</span>
+                <span className="stat-icon">🎯</span>
+                <span className="stat-text">نجح +250 مشروع</span>
               </div>
               <div className="stat-item">
-                <span className="stat-icon">👥</span>
-                <span className="stat-text">راضٍ 500+ عميل</span>
+                <span className="stat-icon">💎</span>
+                <span className="stat-text">ثقة +800 عميل</span>
               </div>
             </div>
             <div className="service-features">
               <div className="feature-item">
                 <FiTruck className="feature-icon" />
-                <span className="feature-text">شحن سريع</span>
+                <span className="feature-text">توصيل فوري</span>
               </div>
               <div className="feature-item">
                 <FiShield className="feature-icon" />
-                <span className="feature-text">ضمان آمن</span>
+                <span className="feature-text">حماية شاملة</span>
               </div>
               <div className="feature-item">
                 <FiGift className="feature-icon" />
-                <span className="feature-text">هدية مجانية</span>
+                <span className="feature-text">مكافآت حصرية</span>
               </div>
             </div>
           </div>
